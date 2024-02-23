@@ -1,0 +1,250 @@
+
+@font-face {
+  font-family: nosifer;
+  src: url(Nosifer-Regular.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  user-select: none;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#nav_bar{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+.navBtn{
+  width: 8vw;
+  height: 6vh;
+  padding: 0.2vw 1vw;
+  border: none;
+  border-radius: 0.5vw;
+  color: #fff;
+  background-color: lightseagreen;
+}
+#list{
+  color: #000;
+  font-size: 2vw;
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+}
+#list li{
+  position: relative;
+}
+#list li a{
+  text-decoration: none;
+}
+#list li a::after{
+  content:'';
+  position: absolute;
+  height: 3px;
+  background-color: lightseagreen;
+  left: 0;
+  bottom: 5px;
+  border-radius: 2px;
+}
+#list li a:hover::after{
+  width: 100%;
+}
+#list li a:hover{
+  cursor: pointer;
+  /* text-decoration: underline; */
+}
+
+.menu{
+  transform: scale(0);
+  z-index: 1;
+  
+}
+#logo{
+  color:#000;
+  font-family: nosifer;
+  padding: 4vw;
+} 
+#logo span{
+  color: lightseagreen;
+}
+#menu:hover{
+  cursor: pointer;
+}
+.content{
+  height: calc(100% - 100px);
+  /* height: 90%; */
+  width: 100%;
+  display: flex;
+  /* background-color: peru; */
+}
+.box1{
+  /* border: 5px solid #fff; */
+  width: 55%;
+  height: 100%;
+  padding: 5vw;
+}
+.box1 h1{
+  font-size: 4.5vw;
+  color: #000;
+  font-weight: 900;
+  line-height: 4vw;
+}
+.box1 h1 span{
+  color: lightseagreen;
+}
+.box1 p{
+    font-size: 1.5vw;
+    width: 90%;
+    font-weight: 500;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+button ,.navBtn:hover{
+  cursor: pointer;
+}
+button{
+  font-size: 1.2vw;
+  padding: 1.1vw 2.1vw;
+  width: 12vw;
+  height: 3vw;
+  border: none;
+  color: #fff;
+  background-color: lightseagreen;
+  border-radius: 0.5vw;
+}
+.box2{
+  background-image: url(coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  width: 45%;
+  height: 100%;
+}
+#btn1{
+  padding: 2px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.meadia_nav{
+
+  width: 55vw;
+  height: 70vw;
+  position: absolute;
+  top: 15vw;
+  right: 0;
+  background-color: rgba(15, 17, 16, 0.678);
+  padding: 0 2vw;
+  border: 1px solid lightseagreen;
+  border-radius: 2vw;
+  z-index: 1;
+  transform: scale(0);
+}
+.meadia_nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.meadia_nav ul{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.9vw;
+  gap: 20px;
+  list-style: none;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #a3929263;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  pointer-events: none;
+
+}
+
+
+@media (max-width:600px) {
+    #nav_bar{
+      color: #fff; */
+      height: 60px;
+    }
+    #logo{
+      font-size: 5vw;
+    }
+   
+    #list li{
+      display: none;
+    }
+    #list i{
+      visibility: visible;
+      color: #000;
+      font-weight: 500;
+      font-size: 9vw;
+    }
+    #list .navBtn{
+      visibility: hidden;
+    }
+    .content{
+      height: calc(100% - 60px);
+      display: flex;
+      flex-direction: column;
+    }
+    .box1{
+      width: 100%;
+      height: 50%;
+    }
+    .box1 h1{
+      font-size: 10vw;
+      line-height: 10vw;
+    }
+    .box1 p{
+      font-size: 3vw;
+      width: 90%;
+      margin-top: 5vw;
+      margin-bottom: 4vw;
+    }
+    .box2{
+      width: 100%;
+      height: 50%;
+    }
+    #btn1{
+      width: 20vw;
+      height: 5vw;
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+      padding:1.2vw  2vw;
+      font-size: 2.3vw;
+    }
+    .menu{
+      transform: scale(1);
+      margin-right: 0.3vw;
+    }
+    .meadia_nav{
+      transform: scale(0);
+    }
+    .overlay{
+      transform: scale(0);
+      pointer-events: initial;
+      
+    }
+    .open{
+      transform: scale(1);
+    }
+   
+    
+}

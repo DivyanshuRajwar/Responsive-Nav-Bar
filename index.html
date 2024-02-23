@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container">
+        <nav id="nav_bar">
+          <h2 id="logo">Raj<span>war</span> </h2>
+          <ul  id="list">
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Project </a></li>
+            <li> <a href="#"> About</a></li>
+            <li> <a href="#"> Blog</a></li>
+            <li> <a href="#"> Products</a></li>
+            <div class="navBtn">SignUp</div>
+            <i onclick="openMenu() "  class="menu ri-menu-2-fill"></i>
+          </ul>
+       
+        </nav>
+        <div class="meadia_nav">
+          <ul  id="meadia_list">
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Project </a></li>
+            <li> <a href="#"> About</a></li>
+            <li> <a href="#"> Blog</a></li>
+            <li> <a href="#"> Products</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="box1">
+            <h1>Learn from the <span>coolest </span> coding platform of India.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas fugit nulla natus temporibus accusantium, ratione quibusdam sunt deleniti nesciunt quis maiores corrupti praesentium quam consectetur iusto dicta excepturi esse!</p>  
+            <button id="btn1">Explore Now</button>
+          </div>
+          <div class="box2"></div>
+        </div>
+      </div>
+      <div onclick="closeMenu()" class="overlay"></div>
+      <script src="script.js"></script>
+</body>
+</html>
