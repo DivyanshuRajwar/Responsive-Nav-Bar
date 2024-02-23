@@ -49,6 +49,9 @@ html,body{
 #list li a{
   text-decoration: none;
 }
+#nav_bar ul li {
+  color: red;
+}
 #list li a::after{
   content:'';
   position: absolute;
